@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #1e252b;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  padding: 1em;
+  column-gap: 1em;
+  border: 2px solid #2d7a47;
+  margin: 1em;
+}
+
+.titulo-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 20em;
+}
+
+.contatos,
+.exeperiencia,
+.skills,
+.educacao,
+.experiencia,
+.sobre {
+  width: 40%;
+  padding-left: 2em !important;
+}
+
+
+.item-contato{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contatos img {
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+.contatos li {
+  list-style: none;
+}
+
+.default-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #2d7a47;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  color: #ffffff;
+}
