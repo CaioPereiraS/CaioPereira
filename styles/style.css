@@ -9,56 +9,52 @@ body {
   color: #ffffff;
   background-color: #1e252b;
 }
-
+main h2 {
+  margin-bottom: 0.5em;
+}
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-grow: 2;
+  justify-content: center;
 }
-
-.nav-container {
+.pai-menu {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  padding: 1em;
-  column-gap: 1em;
-  border: 2px solid #2d7a47;
-  margin: 1em;
+  flex-wrap: nowrap;
+  flex-grow: 2;
+  justify-content: center;
 }
-
+.nav-container {
+  flex-direction: row !important;
+  column-gap: 1em;
+  align-items: center !important;
+}
+.nav-container img {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}
+.nav-container hr {
+  width: 100%;
+  border: 1px solid #ffffff;
+}
 .titulo-container {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
-  width: 20em;
 }
 
-.contatos,
-.exeperiencia,
-.skills,
-.educacao,
-.experiencia,
-.sobre {
-  width: 40%;
-  padding-left: 2em !important;
-}
-
-
-.item-contato{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.item-contato {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .contatos img {
-  width: 2em;
+  width: 1.4em;
   margin-right: 0.5em;
-}
-
-.contatos li {
-  list-style: none;
 }
 
 .default-container {
@@ -66,14 +62,27 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin: 1em;
-  padding: 1em;
+  margin: 1em 2em 1em 2em;
   border: 2px solid #2d7a47;
+  width: 100%;
+  padding: 1em;
+  padding-left: 2em !important;
+  transition: box-shadow 0.5s ease;
+}
+.default-container:hover {
+  box-shadow: 0px 0px 10px 0px #2d7a47;
+}
+@media screen and (max-width: 768px) {
+  .default-container {
+    width: 100%;
+  }
+  .sobre {
+    max-width: 100%;
+  }
+}
+/*
+.default-container:hover {
+  transform: scale(1.01);
 }
 
-svg {
-  width: 1em;
-  height: 1em;
-  margin-right: 0.5em;
-  color: #ffffff;
-}
+*/
