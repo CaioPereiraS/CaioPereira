@@ -5,119 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-main{
-  max-width: 800px;
-}
-
-.educacao{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 96%;
-  margin: 1em;
-}
-
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
   color: #ffffff;
   background-color: #15202B;
   font-family: "Patrick Hand SC", cursive;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-main h2 {
-  margin-bottom: 0.5em;
-}
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.pai-menu {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-grow: 2;
-  justify-content: center;
-}
-.nav-container {
-  flex-direction: row !important;
-  column-gap: 1em;
-  align-items: center !important;
-}
-.nav-container img {
-  width: 5em;
-  height: 5em;
-  border-radius: 100%;
-}
-hr{
-  width: 100%;
- 
-}
-.titulo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
 
-.item-contato {
-  margin-top: 0.5em;
+}
+.menu-nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-}
-
-.contatos img {
-  width: 1.4em;
-  margin-right: 0.5em;
-}
-
-.default-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-
-  /*border: 2px solid #2d7a47;*/
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
   width: 100%;
-  padding: 1em;
-  padding-left: 2em !important;
-  font-size: 1rem;
-}
-.default-container:hover {
-  scale: 1.01;
-}
-.grid-um {
-  grid-template-columns: 1fr;
-  padding: 1em;
-}
-.grid {
-  display: grid;
-  padding: 1em;
-}
-.grid-dois {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #121a22;
 }
 
-.skills ul {
-  padding: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .default-container {
-    width: 100%;
-  }
-  .sobre {
-    max-width: 100%;
-  }
-  .grid {
-    grid-template-columns: 1fr !important;
-  }
+.sobre-mim {
+  padding: 20px;
+  margin-top: 30px;
 }
